@@ -8,11 +8,13 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # My configuration
 export EDITOR=vim
 alias vi=vim
+alias wiki="vim -c VimwikiIndex"
 
 case `uname` in
   Darwin)
