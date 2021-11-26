@@ -8,22 +8,12 @@ plugins=(
     zsh-syntax-highlighting
 )
 
-ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
+
+#aliases
+source $HOME/.alias/alias_*
 
 # My configuration
 export EDITOR=vim
-alias vi=vim
-alias wiki="vim -c VimwikiIndex"
-
-case `uname` in
-  Darwin)
-    # MacOS Specific Config
-  ;;
-  Linux)
-    # commands for Linux go here
-    alias update="sudo apt-get update && sudo apt-get upgrade"
-  ;;
-esac
-
+ZSH_DISABLE_COMPFIX=true
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
