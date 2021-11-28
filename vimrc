@@ -1,8 +1,6 @@
 " Vim Config
 " Sam Tripp
 
-" On Linux the font I use is IBM Plex Mono (Regular)
-" Size 12
 set encoding=utf-8
 
 " ============================================================================
