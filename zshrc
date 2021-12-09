@@ -1,4 +1,5 @@
 # oh-my-zsh installation.
+ZSH_DISABLE_COMPFIX=true
 export ZSH="$HOME/.oh-my-zsh"
 # Themes
 ZSH_THEME="robbyrussell"
@@ -15,5 +16,4 @@ source $HOME/.alias/alias_*
 
 # My configuration
 export EDITOR=vim
-ZSH_DISABLE_COMPFIX=true
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
