@@ -3,3 +3,9 @@
 	email = 1519984+sbt92@users.noreply.github.com
 [alias]
 	log2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+[init]
+	defaultBranch = main
