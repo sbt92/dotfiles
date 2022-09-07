@@ -1,8 +1,8 @@
 set nocompatible
 set encoding=utf-8
 syntax on
-set mouse=a
-set numbers
+set mouse-=a
+set number
 set expandtab
 set tabstop=4
 set softtabstop=4
