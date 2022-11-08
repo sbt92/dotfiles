@@ -15,6 +15,8 @@ bind 'TAB:menu-complete'
 
 # Alaises
 alias vi=vim
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"

@@ -6,6 +6,8 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = /usr/bin/gpg
+    format = ssh
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
