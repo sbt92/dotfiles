@@ -11,9 +11,17 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-#aliases
-source $HOME/.alias/alias_*
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
-# My configuration
+# poetry
+export PATH="/home/sam/.local/bin:$PATH"
+
+# My Alaises & Configuration
 export EDITOR=vim
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias vi=vim
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
