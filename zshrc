@@ -5,17 +5,24 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 # plugins
 plugins=(
+    adb
+    debian
+    docker
+    docker-compose
     git
+    poetry
+    pyenv
+    python
     zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 # poetry
 export PATH="/home/sam/.local/bin:$PATH"
