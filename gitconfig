@@ -1,6 +1,7 @@
 [user]
 	name = Sam Tripp
 	email = 1519984+sbt92@users.noreply.github.com
+	signingkey=~/.ssh/id_ed25519.pub
 [alias]
 	log2 = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [commit]
