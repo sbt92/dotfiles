@@ -5,7 +5,6 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 # plugins
 plugins=(
-    adb
     debian
     docker
     docker-compose
@@ -20,8 +19,13 @@ source $ZSH/oh-my-zsh.sh
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 
 # poetry
 export PATH="/home/sam/.local/bin:$PATH"
